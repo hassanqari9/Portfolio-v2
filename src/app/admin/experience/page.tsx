@@ -97,7 +97,6 @@ export default function ExperiencePage() {
     }
   };
 
-  // Helper function to format date
   const formatDate = (dateString: string) => {
     if (!dateString) return '';
     const date = new Date(dateString);
