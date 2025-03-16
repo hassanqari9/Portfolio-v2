@@ -1,6 +1,10 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { verifyCredentials } from "@/lib/auth";
+import { compare } from "bcrypt";
+import { prisma } from "@/lib/db";
+
+export const dynamic = "force-dynamic";
 
 const handler = NextAuth({
   providers: [
