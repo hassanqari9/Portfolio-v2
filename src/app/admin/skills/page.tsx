@@ -12,7 +12,7 @@ import { Plus, Trash } from "lucide-react";
 import { toast } from "sonner";
 
 export default function SkillsPage() {
-  const [skills, setSkills] = useState<any[]>([]);
+  const [skills, setSkills] = useState<unknown[]>([]);
   const [loading, setLoading] = useState(true);
   const [newSkill, setNewSkill] = useState({
     name: "",

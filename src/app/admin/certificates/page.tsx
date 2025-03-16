@@ -10,7 +10,7 @@ import { Award, Calendar, Plus, Trash } from "lucide-react";
 import { toast } from "sonner";
 
 export default function CertificatesPage() {
-  const [certificates, setCertificates] = useState<any[]>([]);
+  const [certificates, setCertificates] = useState<unknown[]>([]);
   const [loading, setLoading] = useState(true);
   const [newCertificate, setNewCertificate] = useState({
     title: "",

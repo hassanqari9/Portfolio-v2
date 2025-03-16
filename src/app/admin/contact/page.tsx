@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 
 export default function ContactPage() {
-  const [contact, setContact] = useState<any>(null);
+  const [contact, setContact] = useState<unknown>(null);
   const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
     email: "",

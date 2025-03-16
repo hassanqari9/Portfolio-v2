@@ -11,7 +11,7 @@ import { Briefcase, Plus, Trash } from "lucide-react";
 import { toast } from "sonner";
 
 export default function ExperiencePage() {
-  const [experiences, setExperiences] = useState<any[]>([]);
+  const [experiences, setExperiences] = useState<unknown[]>([]);
   const [loading, setLoading] = useState(true);
   const [newExperience, setNewExperience] = useState({
     company: "",

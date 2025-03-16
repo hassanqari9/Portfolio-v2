@@ -10,7 +10,7 @@ import { FolderKanban, Plus, Trash } from "lucide-react";
 import { toast } from "sonner";
 
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState<any[]>([]);
+  const [projects, setProjects] = useState<unknown[]>([]);
   const [loading, setLoading] = useState(true);
   const [newProject, setNewProject] = useState({
     title: "",
